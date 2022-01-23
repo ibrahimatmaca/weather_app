@@ -1,6 +1,5 @@
 # Weather App
-
-In this project, a Weather application for cubit has been developed by using [HardwareAndro](https://www.youtube.com/c/HardwareAndro) channel.
+In this project, a Weather application was developed using the [HardwareAndro](https://www.youtube.com/c/HardwareAndro) channel and using the cubit state management.
 
 ## Getting Started
 
