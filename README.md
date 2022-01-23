@@ -1,16 +1,19 @@
-# weather_app
+# Weather App
 
-A new Flutter project.
+In this project, a Weather application for cubit has been developed by using [HardwareAndro](https://www.youtube.com/c/HardwareAndro) channel.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+The API_KEY and BASE_URL used in the project are hidden as .env files.
 
-A few resources to get you started if this is your first Flutter project:
+You can get your own API KEY and your relevant URL to connect to the API as a member from the link I have specified. [Weather API](https://www.weatherapi.com/)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+After you become a member, open a file named .env inside the flutter file.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+I show you BASE_URL , WEATHER and API KEY to keep my own API information confidential.
+```
+BASE_URL = BASE_URL
+WEATHER = WEATHER
+API_KEY = API_KEY
+```
+If you have uploaded the relevant parts from the site I mentioned to your .env file, you are now ready to run your project.
