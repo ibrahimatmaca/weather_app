@@ -16,7 +16,7 @@ class CoreApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      title: 'Material App',
+      title: 'Weather App',
       home: const WeatherView(),
     );
   }
