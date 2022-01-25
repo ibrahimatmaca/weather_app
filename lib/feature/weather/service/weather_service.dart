@@ -6,7 +6,7 @@ import '../model/weather_model.dart';
 import 'IWeatherService.dart';
 
 class WeatherService extends IWeatherService {
-  WeatherService(Dio manager) : super(networkManager: manager);
+  WeatherService() : super();
 
   @override
   Future<WeatherModel> fetchWeatherData({String? cityName}) async {
@@ -27,7 +27,7 @@ class WeatherService extends IWeatherService {
         return fromJson;
       }
     } on DioError catch (e) {
-      // print("Full Path: " + e.requestOptions.uri.toString());
+      print("Full Path: " + e.requestOptions.uri.toString());
       return WeatherModel();
     }
     return WeatherModel();

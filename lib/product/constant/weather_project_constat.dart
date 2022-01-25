@@ -14,4 +14,11 @@ class WeatherConstants {
     baseUrl: NetworkRoute.BASE_URL.rawValue,
     headers: {'key': NetworkRoute.API_KEY.rawValue},
   );
+
+  late Dio _dio;
+
+  Dio get dio {
+    _dio = Dio(baseOptions);
+    return _dio;
+  }
 }

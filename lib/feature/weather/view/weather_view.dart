@@ -1,8 +1,6 @@
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../product/constant/weather_project_constat.dart';
 import '../../../product/exception/widget_not_found.dart';
 import '../service/weather_service.dart';
 import '../viewmodel/weather_cubit_state.dart';
@@ -15,7 +13,7 @@ class WeatherView extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (_) => WeatherCubit(
-        WeatherService(Dio(WeatherConstants.instance.baseOptions)),
+        WeatherService(),
       ),
       lazy: true,
       child: BlocConsumer<WeatherCubit, WeatherState>(
